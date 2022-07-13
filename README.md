@@ -15,4 +15,15 @@ The following techniques have been used:
  - All the above said modelling techniques are tried and evaluated. The final metric used to evaluate is mean squared error.
 
 ## To excute the script
+
+# first create the environment using env.yml. Command mentioned below:
+
+conda env create --name envname --file=env.yml
+
+# activate the environment created
+
+conda activate envname
+
+# run the script 
+
 python < scriptname.py >

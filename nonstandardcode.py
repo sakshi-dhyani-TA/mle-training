@@ -25,7 +25,7 @@ def load_housing_data(housing_path=HOUSING_PATH):
     csv_path = os.path.join(housing_path, "housing.csv")
     return pd.read_csv(csv_path)
 
-housing = load_housing_data
+housing = load_housing_data()
 
 from sklearn.model_selection import train_test_split
 
@@ -89,6 +89,7 @@ housing_tr["population_per_household"]=housing_tr["population"]/housing_tr["hous
 housing_cat = housing[['ocean_proximity']]
 housing_prepared = housing_tr.join(pd.get_dummies(housing_cat, drop_first=True))
 
+
 from sklearn.linear_model import LinearRegression
 
 lin_reg = LinearRegression()
@@ -98,12 +99,13 @@ from sklearn.metrics import mean_squared_error
 housing_predictions = lin_reg.predict(housing_prepared)
 lin_mse = mean_squared_error(housing_labels, housing_predictions)
 lin_rmse = np.sqrt(lin_mse)
-lin_rmse
+print("Linear Regression rmse score: ",lin_rmse)
 
 
 from sklearn.metrics import mean_absolute_error
 lin_mae = mean_absolute_error(housing_labels, housing_predictions)
 lin_mae
+print("Linear Regression MAE score: ",lin_mae)
 
 
 from sklearn.tree import DecisionTreeRegressor
@@ -115,6 +117,7 @@ housing_predictions = tree_reg.predict(housing_prepared)
 tree_mse = mean_squared_error(housing_labels, housing_predictions)
 tree_rmse = np.sqrt(tree_mse)
 tree_rmse
+print("Decision Tree Regressor rmse score: ",tree_rmse)
 
 
 from sklearn.ensemble import RandomForestRegressor
@@ -150,7 +153,7 @@ grid_search = GridSearchCV(forest_reg, param_grid, cv=5,
                            scoring='neg_mean_squared_error', return_train_score=True)
 grid_search.fit(housing_prepared, housing_labels)
 
-grid_search.best_params_
+print("Grid Search best params for random forest regressor: ",grid_search.best_params_)
 cvres = grid_search.cv_results_
 for mean_score, params in zip(cvres["mean_test_score"], cvres["params"]):
     print(np.sqrt(-mean_score), params)
@@ -179,3 +182,4 @@ X_test_prepared = X_test_prepared.join(pd.get_dummies(X_test_cat, drop_first=Tru
 final_predictions = final_model.predict(X_test_prepared)
 final_mse = mean_squared_error(y_test, final_predictions)
 final_rmse = np.sqrt(final_mse)
+print("Final Model rmse value: ",final_rmse)
