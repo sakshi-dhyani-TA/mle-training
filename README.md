@@ -16,14 +16,12 @@ The following techniques have been used:
 
 ## To excute the script
 
-# first create the environment using env.yml. Command mentioned below:
+## Setup the environment
+- **with virtualenv (recommended)**
+  - create environment using env.yml file: `conda env create -f env.yml`
+  - activate the environment: `conda activate ml-dev`
 
-conda env create --name envname --file=env.yml
 
-# activate the environment created
+## run the script
 
-conda activate envname
-
-# run the script 
-
-python < scriptname.py >
+ - script run command: `python nonstandardcode.py` 
