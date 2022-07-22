@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sakshi/mlflow-housingpriceprediction/new%20with%20one%20nested%20run/mlruns/0/f676ec05a79541bba016dd38006ab369/artifacts
+end_time: 1658482433831
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: f676ec05a79541bba016dd38006ab369
+run_uuid: f676ec05a79541bba016dd38006ab369
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1658482422794
+status: 3
+tags: []
+user_id: sakshi
