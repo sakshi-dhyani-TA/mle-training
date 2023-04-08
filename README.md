@@ -19,7 +19,7 @@ The following techniques have been used:
 ## Setup the environment
 - **with virtualenv (recommended)**
   - create environment using env.yml file: `conda env create -f env.yml`
-  - activate the environment: `conda activate ml-dev`
+  - activate the environment: `conda activate mle-dev`
 
 
 ## run the script
