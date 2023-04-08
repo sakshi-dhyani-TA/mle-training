@@ -17,8 +17,8 @@ from sklearn.model_selection import (
 )
 from sklearn.tree import DecisionTreeRegressor
 
-DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
-HOUSING_PATH = os.path.join("datasets", "housing")
+DOWNLOAD_ROOT = "https://github.com/ageron/handson-ml/tree/master/"
+HOUSING_PATH = os.path.join("..","datasets", "housing")
 HOUSING_URL = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
 
 
