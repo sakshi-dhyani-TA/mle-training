@@ -1,0 +1,236 @@
+Sun Apr  9 17:58:27 2023
+Running Final Script!! 
+Sun Apr  9 17:58:27 2023
+Data Preparation Started!! 
+Sun Apr  9 17:59:48 2023
+Running Final Script!! 
+Sun Apr  9 17:59:48 2023
+Data Preparation Started!! 
+Sun Apr  9 18:04:54 2023
+Running Final Script!! 
+Sun Apr  9 18:04:54 2023
+Data Preparation Started!! 
+Sun Apr  9 18:08:09 2023
+Running Final Script!! 
+Sun Apr  9 18:08:09 2023
+Data Preparation Started!! 
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\sakshi.dhyani\mle-training, universal_newlines=False, shell=None, istream=<valid stream>)
+Sun Apr  9 18:08:10 2023
+Data Preparation Done!! 
+Sun Apr  9 18:08:10 2023
+Data Training Started!! 
+Sun Apr  9 18:12:43 2023
+Data Training Done!! 
+Sun Apr  9 18:12:43 2023
+Metric Evaluation Script Started!! 
+Sun Apr  9 18:14:46 2023
+Running Final Script!! 
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\sakshi.dhyani\mle-training, universal_newlines=False, shell=None, istream=<valid stream>)
+Sun Apr  9 18:14:47 2023
+Data Preparation Done!! 
+Sun Apr  9 18:14:47 2023
+Data Training Started!! 
+Sun Apr  9 18:18:58 2023
+Data Training Done!! 
+Sun Apr  9 18:18:58 2023
+Metric Evaluation Script Started!! 
+Sun Apr  9 18:20:00 2023
+Running Final Script!! 
+Sun Apr  9 18:20:00 2023
+Data Preparation Started!! 
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\sakshi.dhyani\mle-training, universal_newlines=False, shell=None, istream=<valid stream>)
+Sun Apr  9 18:20:01 2023
+Data Preparation Done!! 
+Sun Apr  9 18:20:01 2023
+Data Training Started!! 
+Sun Apr  9 18:23:58 2023
+Data Training Done!! 
+Sun Apr  9 18:23:58 2023
+Metric Evaluation Script Started!! 
+Sun Apr  9 18:23:59 2023
+Metrics Evaluated!! 
+Sun Apr  9 18:23:59 2023
+Success! Metrics Evaluated! 
+Sun Apr  9 18:38:57 2023
+Running Final Script!! 
+Sun Apr  9 18:38:57 2023
+Data Preparation Started!! 
+Starting new HTTP connection (1): 127.0.0.1:5000
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=4, connect=4, read=5, redirect=5, status=5)
+Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000029FCB638910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction
+Starting new HTTP connection (2): 127.0.0.1:5000
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=3, connect=3, read=5, redirect=5, status=5)
+Retrying (Retry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000029FCB638580>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction
+Starting new HTTP connection (3): 127.0.0.1:5000
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=2, connect=2, read=5, redirect=5, status=5)
+Retrying (Retry(total=2, connect=2, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000029FCB638190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction
+Starting new HTTP connection (4): 127.0.0.1:5000
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=1, connect=1, read=5, redirect=5, status=5)
+Retrying (Retry(total=1, connect=1, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000029FCB638070>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction
+Starting new HTTP connection (5): 127.0.0.1:5000
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=0, connect=0, read=5, redirect=5, status=5)
+Retrying (Retry(total=0, connect=0, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000029FCB639B70>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction
+Starting new HTTP connection (6): 127.0.0.1:5000
+Sun Apr  9 18:42:04 2023
+Running Final Script!! 
+Sun Apr  9 18:42:04 2023
+Data Preparation Started!! 
+Starting new HTTPS connection (1): 127.0.0.1:5000
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=4, connect=4, read=5, redirect=5, status=5)
+Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DFBD3C8910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction
+Starting new HTTPS connection (2): 127.0.0.1:5000
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=3, connect=3, read=5, redirect=5, status=5)
+Retrying (Retry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DFBD3C8550>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction
+Starting new HTTPS connection (3): 127.0.0.1:5000
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=2, connect=2, read=5, redirect=5, status=5)
+Retrying (Retry(total=2, connect=2, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DFBD3C8700>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction
+Starting new HTTPS connection (4): 127.0.0.1:5000
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=1, connect=1, read=5, redirect=5, status=5)
+Retrying (Retry(total=1, connect=1, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DFBD3C8100>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction
+Starting new HTTPS connection (5): 127.0.0.1:5000
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=0, connect=0, read=5, redirect=5, status=5)
+Retrying (Retry(total=0, connect=0, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DFBD3C9960>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction
+Starting new HTTPS connection (6): 127.0.0.1:5000
+Sun Apr  9 18:46:34 2023
+Running Final Script!! 
+Sun Apr  9 18:46:34 2023
+Data Preparation Started!! 
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\sakshi.dhyani\mle-training, universal_newlines=False, shell=None, istream=<valid stream>)
+Sun Apr  9 18:46:35 2023
+Data Preparation Done!! 
+Sun Apr  9 18:46:35 2023
+Data Training Started!! 
+Sun Apr  9 18:50:05 2023
+Data Training Done!! 
+Sun Apr  9 18:50:05 2023
+Metric Evaluation Script Started!! 
+Sun Apr  9 18:50:05 2023
+Metrics Evaluated!! 
+Sun Apr  9 18:50:05 2023
+Success! Metrics Evaluated! 
+Sun Apr  9 18:59:35 2023
+Running Final Script!! 
+Sun Apr  9 18:59:35 2023
+Data Preparation Started!! 
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\sakshi.dhyani\mle-training, universal_newlines=False, shell=None, istream=<valid stream>)
+Sun Apr  9 18:59:36 2023
+Data Preparation Done!! 
+Sun Apr  9 18:59:36 2023
+Data Training Started!! 
+Sun Apr  9 19:03:09 2023
+Data Training Done!! 
+Sun Apr  9 19:03:44 2023
+Running Final Script!! 
+Sun Apr  9 19:03:44 2023
+Data Preparation Started!! 
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\sakshi.dhyani\mle-training, universal_newlines=False, shell=None, istream=<valid stream>)
+Sun Apr  9 19:03:44 2023
+Data Preparation Done!! 
+Sun Apr  9 19:03:44 2023
+Data Training Started!! 
+Sun Apr  9 19:07:30 2023
+Running Final Script!! 
+Sun Apr  9 19:07:30 2023
+Data Preparation Started!! 
+Starting new HTTP connection (1): 127.0.0.1:5000
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=4, connect=4, read=5, redirect=5, status=5)
+Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001501ADF8910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction
+Starting new HTTP connection (2): 127.0.0.1:5000
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=3, connect=3, read=5, redirect=5, status=5)
+Sun Apr  9 19:07:55 2023
+Running Final Script!! 
+Sun Apr  9 19:07:55 2023
+Data Preparation Started!! 
+Starting new HTTP connection (1): localhost:5000
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=4, connect=4, read=5, redirect=5, status=5)
+Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F281CE8910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction
+Starting new HTTP connection (2): localhost:5000
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=3, connect=3, read=5, redirect=5, status=5)
+Retrying (Retry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F281CE85B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction
+Starting new HTTP connection (3): localhost:5000
+Sun Apr  9 19:08:24 2023
+Running Final Script!! 
+Sun Apr  9 19:08:24 2023
+Data Preparation Started!! 
+Starting new HTTP connection (1): localhost:8080
+Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction'): Retry(total=4, connect=4, read=5, redirect=5, status=5)
+Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001B166BE8910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Housing+Price+Prediction
+Starting new HTTP connection (2): localhost:8080
+Sun Apr  9 19:08:59 2023
+Running Final Script!! 
+Sun Apr  9 19:08:59 2023
+Data Preparation Started!! 
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\sakshi.dhyani\mle-training, universal_newlines=False, shell=None, istream=<valid stream>)
+Sun Apr  9 19:24:18 2023
+Running Final Script!! 
+Sun Apr  9 19:24:18 2023
+Data Preparation Started!! 
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\sakshi.dhyani\mle-training, universal_newlines=False, shell=None, istream=<valid stream>)
+Sun Apr  9 19:24:31 2023
+Running Final Script!! 
+Sun Apr  9 19:24:31 2023
+Data Preparation Started!! 
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\sakshi.dhyani\mle-training, universal_newlines=False, shell=None, istream=<valid stream>)
+Sun Apr  9 19:25:41 2023
+Running Final Script!! 
+Sun Apr  9 19:25:41 2023
+Data Preparation Started!! 
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\sakshi.dhyani\mle-training, universal_newlines=False, shell=None, istream=<valid stream>)
+Sun Apr  9 19:25:42 2023
+Data Preparation Done!! 
+Sun Apr  9 19:25:42 2023
+Data Training Started!! 
+Sun Apr  9 19:27:12 2023
+Running Final Script!! 
+Sun Apr  9 19:27:12 2023
+Data Preparation Started!! 
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\sakshi.dhyani\mle-training, universal_newlines=False, shell=None, istream=<valid stream>)
+Sun Apr  9 19:27:13 2023
+Data Preparation Done!! 
+Sun Apr  9 19:27:13 2023
+Data Training Started!! 
+Sun Apr  9 19:29:53 2023
+Data Training Done!! 
+Sun Apr  9 19:29:53 2023
+Metrics Evaluated!! 
+Sun Apr  9 19:29:53 2023
+Success! Metrics Evaluated! 
+Sun Apr  9 19:33:19 2023
+Running Final Script!! 
+Sun Apr  9 19:33:19 2023
+Data Preparation Started!! 
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\src, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\sakshi.dhyani\mle-training, universal_newlines=False, shell=None, istream=<valid stream>)
+Sun Apr  9 19:33:20 2023
+Data Preparation Done!! 
+Sun Apr  9 19:33:20 2023
+Data Training Started!! 
+Sun Apr  9 19:37:27 2023
+Data Training Done!! 
+Sun Apr  9 19:37:27 2023
+Metrics Evaluated!! 
+Sun Apr  9 19:37:27 2023
+Success! Metrics Evaluated! 

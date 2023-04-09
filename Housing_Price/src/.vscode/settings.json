@@ -1,0 +1,17 @@
+{
+    "python.pythonPath": "\\wsl.localhost\\Ubuntu\\home\\sakshi\\miniconda3\\envs\\mle-dev\\bin\\python3",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+        "sort-imports.on-save": true
+    },
+    "editor.indentSize": "tabSize",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "flake8.args": [
+        "--max-line-length=120"
+    ],
+    "editor.renderWhitespace": "trailing"
+}
