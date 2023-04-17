@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "\\wsl.localhost\\Ubuntu\\home\\sakshi\\miniconda3\\envs\\mle-dev\\bin\\python3",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+        "sort-imports.on-save": true
+    }
+}
