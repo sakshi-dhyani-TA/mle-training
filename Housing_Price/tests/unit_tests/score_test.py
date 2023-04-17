@@ -1,5 +1,5 @@
 import os
-from src import score
+from housing_scripts import score
 import unittest
 
 r_path = os.path.dirname(os.path.dirname(os.getcwd()))

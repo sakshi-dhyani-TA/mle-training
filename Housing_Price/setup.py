@@ -1,7 +1,14 @@
-import os
+import setuptools
 
-from setuptools import find_packages, setup
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.join(ROOT, "src")
-setup(name="src", package_dir={"": "src"}, packages=find_packages(where=str(SRC)))
+setuptools.setup(
+    name="Housing_scripts",
+    version="0.0.1",
+    author="sakshi.dhyani",
+    author_email="sakshi.dhyani@tigeranalytics.com",
+    package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src"),
+    python_requires=">=3.6",
+)

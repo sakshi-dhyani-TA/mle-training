@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from src import ingest_data
+from housing_scripts import ingest_data
 
 
 class Test(unittest.TestCase):

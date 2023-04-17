@@ -4,10 +4,10 @@ import logging.config
 import os
 import time
 
-import ingest_data
+from housing_scripts import ingest_data
 import mlflow
-import score
-import train
+from housing_scripts import score
+from housing_scripts import train
 
 LOGGING_DEFAULT_CONFIG = {
     "version": 1,

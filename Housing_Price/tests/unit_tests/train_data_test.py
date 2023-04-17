@@ -1,4 +1,4 @@
-from src import train
+from housing_scripts import train
 import unittest
 import os
 

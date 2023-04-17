@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sakshi.dhyani/mle-training/Housing_Price/final_script/mlruns/301369765331061922/3febd9ba69d34b1981eb9c1a7796d010/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '301369765331061922'
+lifecycle_stage: active
+run_id: 3febd9ba69d34b1981eb9c1a7796d010
+run_name: Data Preparation
+run_uuid: 3febd9ba69d34b1981eb9c1a7796d010
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681732808387
+status: 1
+tags: []
+user_id: sakshi.dhyani

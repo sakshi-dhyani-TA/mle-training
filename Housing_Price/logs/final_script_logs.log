@@ -234,3 +234,14 @@ Sun Apr  9 19:37:27 2023
 Metrics Evaluated!! 
 Sun Apr  9 19:37:27 2023
 Success! Metrics Evaluated! 
+Mon Apr 17 17:30:07 2023
+Running Final Script!! 
+Mon Apr 17 17:30:07 2023
+Data Preparation Started!! 
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\final_script, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'version'], cwd=C:\Users\sakshi.dhyani\mle-training\Housing_Price\final_script, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\sakshi.dhyani\mle-training, universal_newlines=False, shell=None, istream=<valid stream>)
+Mon Apr 17 17:30:08 2023
+Data Preparation Done!! 
+Mon Apr 17 17:30:08 2023
+Data Training Started!! 
