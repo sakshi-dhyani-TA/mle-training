@@ -42,11 +42,12 @@ housing = load_housing_data()
 
 train_set, test_set = train_test_split(housing, test_size=0.2, random_state=42)
 
-housing["income_cat"] = pd.cut(
-    housing["median_income"],
-    bins=[0.0, 1.5, 3.0, 4.5, 6.0, np.inf],
-    labels=[1, 2, 3, 4, 5],
-)
+
+
+housing["income_cat"] = pd.cut(housing["median_income"],
+                               bins=[0., 1.5, 3.0, 4.5, 6., np.inf],
+                               labels=[1, 2, 3, 4, 5])
+
 
 
 
@@ -61,23 +62,21 @@ def income_cat_proportions(data):
 
 
 
+
 train_set, test_set = train_test_split(housing, test_size=0.2,
                                        random_state=42)
 
 
-compare_props = pd.DataFrame(
-    {
-        "Overall": income_cat_proportions(housing),
-        "Stratified": income_cat_proportions(strat_test_set),
-        "Random": income_cat_proportions(test_set),
-    }
-).sort_index()
-compare_props["Rand. %error"] = (
-    100 * (compare_props["Random"] / compare_props["Overall"]) - 100
-)
-compare_props["Strat. %error"] = (
-    100 * (compare_props["Stratified"] / compare_props["Overall"]) - 100
-)
+compare_props = pd.DataFrame({
+    "Overall": income_cat_proportions(housing),
+    "Stratified": income_cat_proportions(strat_test_set),
+    "Random": income_cat_proportions(test_set),
+}).sort_index()
+compare_props["Rand. %error"] = 100 * (compare_props["Random"] /
+                                       compare_props["Overall"]) - 100
+compare_props["Strat. %error"] = 100 * (compare_props["Stratified"] /
+                                        compare_props["Overall"]) - 100
+
 
 
 for set_ in (strat_train_set, strat_test_set):
@@ -112,7 +111,6 @@ imputer.fit(housing_num)
 X = imputer.transform(housing_num)
 
 
-
 housing_tr = pd.DataFrame(X, columns=housing_num.columns,
                           index=housing.index)
 housing_tr["rooms_per_household"] = (housing_tr["total_rooms"] /
@@ -123,18 +121,21 @@ housing_tr["population_per_household"] = (housing_tr["population"] /
                                           housing_tr["households"])
 
 
-housing_cat = housing[["ocean_proximity"]]
-housing_prepared = housing_tr.join(
-    pd.get_dummies(housing_cat, drop_first=True))
+housing_cat = housing[['ocean_proximity']]
+housing_prepared = housing_tr.join(pd.get_dummies(
+                                   housing_cat, drop_first=True))
+
 
 
 lin_reg = LinearRegression()
 lin_reg.fit(housing_prepared, housing_labels)
 
+
 housing_predictions = lin_reg.predict(housing_prepared)
 lin_mse = mean_squared_error(housing_labels, housing_predictions)
 lin_rmse = np.sqrt(lin_mse)
 print("Linear Regression rmse score: ", lin_rmse)
+
 
 lin_mae = mean_absolute_error(housing_labels, housing_predictions)
 lin_mae
@@ -217,8 +218,6 @@ X_test_prepared["population_per_household"] = (X_test_prepared["population"] /
 X_test_cat = X_test[['ocean_proximity']]
 X_test_prepared = X_test_prepared.join(pd.get_dummies(
                                        X_test_cat, drop_first=True))
-
-
 
 
 final_predictions = final_model.predict(X_test_prepared)
