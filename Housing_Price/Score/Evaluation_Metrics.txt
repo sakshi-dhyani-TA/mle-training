@@ -1,0 +1,5 @@
+Scores for test data
+Root Mean Squared Error 45613.625191833 
+Mean Absolute Error 30656.992490310076 
+
+R2 Score 0.8403607125382071 

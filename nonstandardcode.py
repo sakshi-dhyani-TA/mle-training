@@ -15,10 +15,11 @@ from sklearn.model_selection import (
     StratifiedShuffleSplit,
     train_test_split,
 )
+
 from sklearn.tree import DecisionTreeRegressor
 
 DOWNLOAD_ROOT = "https://github.com/ageron/handson-ml/tree/master/"
-HOUSING_PATH = os.path.join("..","datasets", "housing")
+HOUSING_PATH = os.path.join("..", "datasets", "housing")
 HOUSING_URL = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
 
 
