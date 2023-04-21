@@ -15,10 +15,11 @@ from sklearn.model_selection import (
     StratifiedShuffleSplit,
     train_test_split,
 )
+
 from sklearn.tree import DecisionTreeRegressor
 
-DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
-HOUSING_PATH = os.path.join("datasets", "housing")
+DOWNLOAD_ROOT = "https://github.com/ageron/handson-ml/tree/master/"
+HOUSING_PATH = os.path.join("..", "datasets", "housing")
 HOUSING_URL = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
 
 
@@ -49,6 +50,7 @@ housing["income_cat"] = pd.cut(housing["median_income"],
 
 
 
+
 split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
 for train_index, test_index in split.split(housing, housing["income_cat"]):
     strat_train_set = housing.loc[train_index]
@@ -60,8 +62,10 @@ def income_cat_proportions(data):
 
 
 
+
 train_set, test_set = train_test_split(housing, test_size=0.2,
                                        random_state=42)
+
 
 compare_props = pd.DataFrame({
     "Overall": income_cat_proportions(housing),
@@ -72,6 +76,7 @@ compare_props["Rand. %error"] = 100 * (compare_props["Random"] /
                                        compare_props["Overall"]) - 100
 compare_props["Strat. %error"] = 100 * (compare_props["Stratified"] /
                                         compare_props["Overall"]) - 100
+
 
 
 for set_ in (strat_train_set, strat_test_set):
@@ -94,6 +99,7 @@ housing["population_per_household"] = (housing["population"] /
 
 housing = strat_train_set.drop("median_house_value",
                                axis=1)  # drop labels for training set
+
 housing_labels = strat_train_set["median_house_value"].copy()
 
 
@@ -114,9 +120,11 @@ housing_tr["bedrooms_per_room"] = (housing_tr["total_bedrooms"] /
 housing_tr["population_per_household"] = (housing_tr["population"] /
                                           housing_tr["households"])
 
+
 housing_cat = housing[['ocean_proximity']]
 housing_prepared = housing_tr.join(pd.get_dummies(
                                    housing_cat, drop_first=True))
+
 
 
 lin_reg = LinearRegression()
@@ -156,6 +164,7 @@ rnd_search = RandomizedSearchCV(forest_reg, param_distributions=param_distribs,
                                 scoring='neg_mean_squared_error',
                                 random_state=42)
 
+
 rnd_search.fit(housing_prepared, housing_labels)
 cvres = rnd_search.cv_results_
 for mean_score, params in zip(cvres["mean_test_score"], cvres["params"]):
@@ -171,9 +180,11 @@ param_grid = [
 forest_reg = RandomForestRegressor(random_state=42)
 # train across 5 folds, that's a total of (12+6)*5=90 rounds of training
 
+
 grid_search = GridSearchCV(forest_reg, param_grid, cv=5,
                            scoring='neg_mean_squared_error',
                            return_train_score=True)
+
 
 grid_search.fit(housing_prepared, housing_labels)
 
@@ -207,7 +218,6 @@ X_test_prepared["population_per_household"] = (X_test_prepared["population"] /
 X_test_cat = X_test[['ocean_proximity']]
 X_test_prepared = X_test_prepared.join(pd.get_dummies(
                                        X_test_cat, drop_first=True))
-
 
 
 final_predictions = final_model.predict(X_test_prepared)

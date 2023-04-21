@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/Housing_scripts.egg-info/PKG-INFO
+src/Housing_scripts.egg-info/SOURCES.txt
+src/Housing_scripts.egg-info/dependency_links.txt
+src/Housing_scripts.egg-info/top_level.txt
+src/housing_scripts/__init__.py
+src/housing_scripts/final_script_ml_flow.py
+src/housing_scripts/ingest_data.py
+src/housing_scripts/score.py
+src/housing_scripts/train.py
