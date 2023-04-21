@@ -4,7 +4,7 @@
     "editor.codeActionsOnSave": {
         "source.organizeImports": true,
         "sort-imports.on-save": true
-    },
+      },
     "editor.indentSize": "tabSize",
     "python.analysis.typeCheckingMode": "basic",
     "python.envFile": "${workspaceFolder}/.env",
@@ -12,5 +12,6 @@
     "python.linting.enabled": true,
     "python.linting.flake8Args": [
         "--max-line-length=109"
-    ],
+    ]
+
 }
