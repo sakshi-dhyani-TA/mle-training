@@ -1,0 +1,22 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]
+
+[project]
+authors = [
+  {name = "sakshi.dhyani", email = "sakshi.dhyani@tigeranalytics.com"},
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+description = "A small example package"
+name = "example_package_sakshi_dhyani"
+readme = "README.md"
+requires-python = ">=3.7"
+version = "0.0.1"
+
+[project.urls]
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+"Homepage" = "https://github.com/pypa/sampleproject"
