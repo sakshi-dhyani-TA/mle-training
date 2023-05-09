@@ -1,0 +1,6 @@
+artifact_location: file:///docker_assignment/mlruns/940839911615639888
+creation_time: 1683560422091
+experiment_id: '940839911615639888'
+last_update_time: 1683560422091
+lifecycle_stage: active
+name: Housing Price Prediction

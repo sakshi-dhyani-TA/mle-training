@@ -1,0 +1,15 @@
+artifact_uri: file:///docker_assignment/mlruns/940839911615639888/009413d88c2e4a1aa3f32ad872997f5f/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '940839911615639888'
+lifecycle_stage: active
+run_id: 009413d88c2e4a1aa3f32ad872997f5f
+run_name: Data Training
+run_uuid: 009413d88c2e4a1aa3f32ad872997f5f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1683560422376
+status: 1
+tags: []
+user_id: root
